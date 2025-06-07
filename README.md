@@ -1,77 +1,61 @@
-# 🛍️ Amazon Review Collector
+# 🛍️ Amazon Review Collector (Google Colab)
 
-This project is a Python-based web scraping tool built with BeautifulSoup and `requests` that collects and displays product reviews from Amazon product pages. It is implemented in a Jupyter Notebook for easy visualization and testing.
+This project is a Python-based web scraping tool built with `requests` and `BeautifulSoup` to collect product reviews from Amazon product pages. It is implemented and intended to be run on **Google Colab**, which makes it easy to use without any local setup.
 
 ## 📌 Features
 
-- Takes an Amazon product URL as input.
-- Extracts the product title.
-- Scrapes review titles and review texts.
-- Displays the reviews in a structured format.
+- Accepts an Amazon product URL as input.
+- Scrapes product title, review titles, and review content.
+- Outputs the reviews in a readable format within Colab.
 
-## 📂 Project Structure
+## 📂 Project Files
 
 ```
 📦 Amazon Review Collector
-├── Copy_of_Amazon_review_collector (1).ipynb
+├── Copy_of_Amazon_review_collector
 └── README.md
 ```
 
 ## 🧰 Requirements
 
-- Python 3.7+
-- Jupyter Notebook
-- `requests`
-- `bs4` (BeautifulSoup)
-- `html5lib`
+All dependencies can be installed directly inside the Colab notebook using:
 
-### Installation
-
-To set up the environment, install the required packages:
-
-```bash
-pip install requests beautifulsoup4 html5lib
+```python
+!pip install requests beautifulsoup4 html5lib
 ```
 
-Or you can install all dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
+These libraries are typically already available in Colab by default.
 
 ## 🚀 How to Use
 
-1. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook
+1. Open the notebook on Google Colab.
+
+2. Install dependencies (if needed) using:
+   ```python
+   !pip install requests beautifulsoup4 html5lib
    ```
 
-2. Open `Copy_of_Amazon_review_collector (1).ipynb`.
+3. Enter the URL of an Amazon product (with reviews) when prompted.
 
-3. Enter the URL of an Amazon product (make sure it's a public and accessible URL with reviews).
+4. Run all cells to view:
+   - The product name.
+   - Review titles.
+   - Review texts.
 
-4. Run the cells to scrape and display reviews.
+> ⚠️ **Important:** This tool is for educational use only. Scraping Amazon frequently or at scale may violate their Terms of Service.
+thats why we used already existing data.
+## 📎 Sample Output
 
-> ⚠️ **Note:** This project is intended for educational purposes only. Frequent or automated scraping of Amazon may violate their Terms of Service.
-
-## 📎 Example Output
-
-The notebook will display:
-- The product name.
-- The review titles and review contents.
-  
-Example:
 ```
-Product Title: XYZ Bluetooth Headphones
+Product Title: Example Headphones
 
 Review 1 Title: Great Sound!
-Review 1 Text: These headphones have amazing sound quality...
+Review 1 Text: These headphones sound amazing...
 
 Review 2 Title: Worth the Price
-Review 2 Text: For the price, the features are amazing...
+Review 2 Text: For the price, these are unbeatable...
 ```
 
 ## 🛑 Disclaimer
 
-This script is intended solely for personal or educational use. Web scraping should be done responsibly and in accordance with the website’s terms and conditions.
-
+This script is intended for learning and personal use only. Be mindful of the terms and policies of the websites you interact with.
