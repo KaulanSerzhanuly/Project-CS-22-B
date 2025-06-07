@@ -75,6 +75,3 @@ Review 2 Text: For the price, the features are amazing...
 
 This script is intended solely for personal or educational use. Web scraping should be done responsibly and in accordance with the website’s terms and conditions.
 
-## 📫 Contact
-
-For questions or contributions, feel free to open an issue or submit a pull request.
